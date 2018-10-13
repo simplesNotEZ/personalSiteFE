@@ -30,3 +30,111 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Home-stylings ***************************************************************************** */
+
+.home::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;   
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/circuit1.jpg");
+  background-size: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.subHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.sectionBackground {
+  background-color: white;
+}
+
+.linkSection {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 2vw;
+  margin: 1vw;
+}
+
+.linkSection h2 {
+  border: 1px solid black;
+}
+
+.devices {
+  width: 6vw;
+  height: 6vw;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  
+}
+
+.incandescent {
+  padding: 0 2.6vw;
+}
+
+.CFL {
+  padding: 0 1.75vw;
+}
+
+.tubeLight {
+  padding: 0 0.1vw;
+}
+/* Footer-stylings ***************************************************************************** */
+.App-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+  background-color: #222;
+  height: 13vh;
+
+}
+
+.App-footer > p {
+  color: white;
+}
+
+.socialMediaIcons {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.icons {
+  width: 4vw;
+  height: 4vw;
+  padding: 0;
+  margin: 0;
+}
+
+.instagramIcon {
+  display: flex;
+  margin: .5vw;
+  height: 3vw;
+  width: 3vw;
+}
+
+.license-p {
+  margin-right: 3vw;
+  margin-left: 3vw;
+}
+
