@@ -21,7 +21,7 @@ const Home = (props) => {
                 </Link>
                 <section className="bottleLink">
                     <img src={bottledLightning} className="power" alt="lightning in a bottle" />
-                    <h1 className="bottle">INFUSE</h1>
+                    <h1 className="bottle">infuse</h1>
                 </section>
                 <Link to="/projects"  className="link CFLLink">
                     <section className="linkSection">

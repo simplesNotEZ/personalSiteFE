@@ -80,19 +80,19 @@
 
 .incandescentLink {
   position: absolute;
-  right: 15vw;
+  right: 19vw;
   top: -2vw;
 }
 
 .CFLLink {
   position: absolute;
-  left: 38vw;
+  left: 38.7vw;
   top: 32vw;
 }
 
 .tubeLink {
   position: absolute;
-  left: 15vw;
+  left: 19vw;
   top: -2vw;
 }
 
@@ -112,13 +112,14 @@
 
 .power {
   background-color: white;
-  width: 13vw;
+  width: 13.5vw;
   height: 14.5vw;
   padding: 1vw 2vw 2vw;
   margin: 0vw;
   border: 1px solid black;
   border-radius: 50%;
-  opacity: .7;
+  opacity: .95;
+  box-shadow: 0vw .25vw .5vw black;
 }
 
 .devices {
@@ -130,6 +131,7 @@
   border: 1px solid black;
   border-radius: 50%;
   opacity: .7;
+  box-shadow: 0vw .25vw .5vw black;
 }
 
 .bottle {
@@ -137,17 +139,22 @@
   position: absolute;
   /* opacity: 0.9; */
   top: 9vw;
-  left: .75vw;
-  color: white;
+  left: 1.75vw;
+  color: yellow;
   font-size: 3vw;
+  text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .incandescent {
   padding: .25vw 2.6vw;
   position: absolute;
   opacity: 0.7;
-  bottom: 4vw;
-  left: 4.5vw;
+  bottom: 3vw;
+  left: 2.7vw;
   background-color: black;
   color: white;
 }
@@ -156,8 +163,8 @@
   padding: .25vw 1.7vw;
   position: absolute;
   opacity: 0.7;
-  bottom: 4vw;
-  left: 4.6vw;
+  bottom: 3vw;
+  left: 2.7vw;
   background-color: black;
   color: white;
 }
@@ -166,8 +173,8 @@
   padding: .25vw .5vw;
   position: absolute;
   opacity: 0.7;
-  bottom: 4vw;
-  left: 4vw;
+  bottom: 3vw;
+  left: 2.1vw;
   background-color: black;
   color: white;
 }
