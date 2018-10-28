@@ -1,61 +1,36 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 /* Home-stylings ***************************************************************************** */
+
+.home {
+  
+}
 
 .home::after {
   content: "";
   display: block;
   position: absolute;
   z-index: -1;   
+  /* may not need the two following if background-size is set to cover.  You gotta do one or the other, but they both do the same thing, methinks */
   width: 100%;
-  height: 125%;
+  height: 100%;
   background-image: url("./images/circuit1.jpg");
-  background-size: cover;
+  /* background-size: cover; */
   opacity: 0.1;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 0;  
   right: 0;
-}
+}  
 
 .subHome {
   position: relative;
-  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 .link {
@@ -73,7 +48,7 @@
 
 .bottleLink {
   position: absolute;
-  top: 13vw;
+  top: 11.5vw;
   background-color: black;
   border-radius: 50%;
 }
@@ -112,11 +87,11 @@
 
 .power {
   background-color: white;
-  width: 13.5vw;
-  height: 14.5vw;
-  padding: 1vw 2vw 2vw;
+  width: 20vw;
+  height: 20vw;
+  padding: 1.5vw 3vw 2vw;
   margin: 0vw;
-  border: 1px solid black;
+  border: .05vw solid black;
   border-radius: 50%;
   opacity: .95;
   box-shadow: 0vw .25vw .5vw black;
@@ -124,8 +99,8 @@
 
 .devices {
   background-color: white;
-  width: 11vw;
-  height: 11vw;
+  width: 15vw;
+  height: 15vw;
   padding: 2vw;
   margin: 0vw;
   border: 1px solid black;
@@ -139,9 +114,9 @@
   position: absolute;
   /* opacity: 0.9; */
   top: 9vw;
-  left: 1.75vw;
+  left: 1.6vw;
   color: yellow;
-  font-size: 3vw;
+  font-size: 4vw;
   text-shadow: 
     -1px -1px 0 #000,  
     1px -1px 0 #000,
@@ -157,6 +132,7 @@
   left: 2.7vw;
   background-color: black;
   color: white;
+  font-size: 1.6vw;
 }
 
 .CFL {
@@ -167,6 +143,7 @@
   left: 2.7vw;
   background-color: black;
   color: white;
+  font-size: 1.6vw;
 }
 
 .tubeLight {
@@ -177,6 +154,7 @@
   left: 2.1vw;
   background-color: black;
   color: white;
+  font-size: 1.6vw;
 }
 /* Footer-stylings ***************************************************************************** */
 .App-footer {
@@ -184,14 +162,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 4vw;
+  padding: 2vw 4vw;
   background-color: #222;
-  height: 13vh;
   border: 1px solid red;
   }
 
 .App-footer > p {
   color: white;
+  font-size: 1.3vw;
 }
 
 .socialMediaIcons {

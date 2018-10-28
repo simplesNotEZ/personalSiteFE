@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import bottledLightning2 from '../images/bottledLightning2.png';
-
-
 import '../App.css';
 
 const Header = (props) => {
