@@ -5,7 +5,8 @@
 /* Home-stylings ***************************************************************************** */
 
 .home {
-  
+  padding-top: 1vh;
+  border: 2px solid greenyellow;
 }
 
 .home::after {
@@ -14,15 +15,18 @@
   position: absolute;
   z-index: -1;   
   /* may not need the two following if background-size is set to cover.  You gotta do one or the other, but they both do the same thing, methinks */
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  height: 110%; 
   background-image: url("./images/circuit1.jpg");
-  /* background-size: cover; */
-  opacity: 0.1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.1; */
   top: 0;
   left: 0;
   bottom: 0;  
   right: 0;
+  border: 10px solid yellow;
+  padding-top: 1vh;
 }  
 
 .subHome {
@@ -30,8 +34,164 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 103vh;
+  border: 3px solid orangered;
 }
+
+/* media queries *********************************************************************************************/
+
+@media only screen and (max-width: 1330px) {
+  .home {
+    padding-top: 3vh; 
+  }
+  
+  .home::after {
+    /* height: 130%; */
+    /* padding-top: 30vh; */
+  }
+
+  .subHome {
+    height: 95vh; 
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .home {
+    padding-top: 3vh;
+  }
+  
+  .home::after {
+    height: 100%;
+    /* padding-top: 30vh; */
+  }
+
+  .subHome {
+    height: 90vh; 
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .home {
+    padding-top: 5vh; 
+  }
+  
+  .home::after {
+    height: 95%;
+    /* padding-top: 30vh; */
+  }
+
+  .subHome {
+    height: 83vh; 
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .home {
+    padding-top: 9vh; 
+  }
+  
+  .home::after {
+    height: 95%;
+    /* padding-top: 30vh; */
+  }
+
+  .subHome {
+    height: 80vh; 
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .home {
+    padding-top: 12vh; 
+  }
+  
+  .home::after {
+    height: 95%;
+    /* padding-top: 30vh; */
+  }
+
+  .subHome {
+    height: 78vh; 
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .home {
+    padding-top: 17vh; 
+  }
+  
+  .home::after {
+    height: 95%;
+    /* padding-top: 30vh; */
+  }
+
+  .subHome {
+    height: 75vh; 
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .home {
+    padding-top: 21vh; 
+  }
+  
+  .home::after {
+    height: 95%;
+    /* padding-top: 30vh; */
+  }
+
+  .subHome {
+    height: 71.75vh; 
+  }
+}
+
+@media only screen and (max-width: 630px) {
+    .home {
+      padding-top: 24vh; 
+    }
+    
+    .home::after {
+      height: 95%;
+      /* padding-top: 30vh; */
+    }
+  
+    .subHome {
+      height: 69.5vh; 
+    }
+}
+
+@media only screen and (max-width: 530px) {
+  .home {
+    padding-top: 26vh; 
+  }
+  
+  .home::after {
+    height: 95%;
+    /* padding-top: 30vh; */
+  }
+
+  .subHome {
+    height: 68.5vh; 
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .home {
+    padding-top: 28vh; 
+  }
+  
+  .home::after {
+    height: 95%;
+    /* padding-top: 30vh; */
+  }
+
+  .subHome {
+    height: 67vh; 
+  }
+}
+
+
+/************************************************************************************************************/
 
 .link {
   text-decoration: none;
@@ -61,7 +221,7 @@
 
 .CFLLink {
   position: absolute;
-  left: 38.7vw;
+  left: 38.4vw;
   top: 32vw;
 }
 
@@ -164,13 +324,24 @@
   justify-content: space-between;
   padding: 2vw 4vw;
   background-color: #222;
-  border: 1px solid red;
+  border: 1px solid blue;
   }
 
 .App-footer > p {
   color: white;
   font-size: 1.3vw;
 }
+
+/* media query *********************************************************************************************/
+
+@media only screen and (max-width: 1330px) {
+  .App-footer {
+    /* margin-top: 5vh; */
+  }
+}
+
+
+/************************************************************************************************************/
 
 .socialMediaIcons {
   display: flex;
